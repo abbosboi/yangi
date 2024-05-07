@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    defer
+    src="https://kit.fontawesome.com/276ffb3fcd.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #616161;
+        }
+        .navbar {
+            background-color: #350b79;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            place-items: center;
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+        .right {
+            gap: 20px;
+            display: flex;
+            place-items: center;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+        .fa-bars {
+            font-size: 40px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        .fa-bars-staggered {
+            margin-top: 20px;
+            color: #fff;
+            font-size: 40px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        .fa-bell {
+            font-size: 32px;
+            cursor: pointer;
+            position: fixed;
+            top: 30px;
+            right: 120px;
+        }
+        .fa-xmark {
+            position: fixed;
+            top: 80px;
+            right: 115px;
+            font-size: 32px;
+            cursor: pointer;
+            color: #fff;
+        }
+        .icon {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .icon2 {
+            display: none;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .active {
+            display: block;
+            background-color: #000;
+        }
+        .sidebar {
+            margin-top: 520px;
+            background-color: #000000c0;
+            width: 100%;
+            height: 600px;
+            display: none;
+        }
+        .sidebar2 {
+            position: fixed;
+            border-radius: 20px;
+            top: 50px;
+            right: 100px;
+            margin-top: 20px;
+            background-color: #000;
+            width: 300px;
+            height: 400px;
+            display: none;
+        }
+        .ul {
+            padding: 0 20%;
+            place-items: center;
+            text-align: center;
+        }
+        .li {
+            list-style-type: none;
+            font-size: 50px;
+            color: #fff;
+            cursor: pointer;
+            margin-bottom: 10px;
+            &:hover {
+                color: #0fb92b;
+            }
+        }
+        .ull {
+            place-items: center;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .lii {
+            list-style-type: none;
+            font-size: 20px;
+            color: #fff;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            &:hover {
+                color: #0fb92b;
+                border-color: #0fb92b;
+            }
+        }
+        .icons {
+            margin-top: 100px;
+            padding: 0 20%;
+            gap: 20px;
+            text-align: center;
+        }
+        .fa-brands {
+            color: #fff;
+            font-size: 50px;
+            margin: 0 10px;
+            cursor: pointer;
+            &:hover {
+                color: #0fb92b;
+            }
+        }
+        .sidebar3 {
+            position: fixed;
+            border-radius: 20px;
+            top: 70px;
+            right: 20px;
+            margin-top: 20px;
+            background-color: #000;
+            width: 500px;
+            height: 600px;
+            display: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        
+        }
+        .fa-circle-xmark {
+            position: fixed;
+            top: 100px;
+            right: 30px;
+            font-size: 32px;
+            cursor: pointer;
+            color: #fff;
+        }
+        .h3 {
+            color: gray;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .icon3 {
+            width: 200px;
+            height: 200px;
+            padding: 0 30%;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .h1 {
+            color: #fff;
+            font-size: 40px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .add {
+            font-size: 30px;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            border-radius: 50px;
+            padding: 10px 20px;
+            margin-top: 20px;
+            &:hover {
+                background-color: #00ff2a6c;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        
+        <div>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        
+        <div class="sidebar">
+            <i class="fa-solid fa-bars-staggered"></i>
+            <ul class="ul">
+                <li class="li">Menu</li>
+                <li class="li">Contacts</li>
+                <li class="li">Credits</li>
+                <li class="li">FAQ</li>
+            </ul>
+            <ul class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-telegram"></i>   
+            </ul>
+        </div>
+        
+        
+            <div>
+                <i class="fa-solid fa-bell"></i>
+            </div>
+
+            <div class="sidebar2">
+                <i class="fa-solid fa-xmark"></i>
+                <ul class="ull">
+                    <li class="lii">You have a new message</li>
+                    <li class="lii">You have a new message</li>
+                    <li class="lii">You have a new message</li>
+                    <li class="lii">You have a new message</li>
+                    <li class="lii">You have a new message</li>
+                    <li class="lii">You have a new message</li>
+                    <li class="lii">You have a new message</li>
+                </ul>
+            </div>
+            
+            <div>
+                <img class="icon" src="avatar.svg" alt="">
+                <img class="icon2" src="avatar.svg" alt="">
+            </div>
+
+            <div class="sidebar3">
+                <i class="fa-regular fa-circle-xmark"></i>
+
+                <h3 class="h3">user123@gmail.com</h3>
+                <img class="icon3" src="avatar.svg" alt="">
+                <h1 class="h1">Some Person</h1>
+
+                <a href="" class="add">Add a new account</a>
+            </div>
+        
+    </nav>
+    
+    <script src="app.js"></script>
+</body>
+</html>
